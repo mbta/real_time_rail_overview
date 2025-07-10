@@ -70,5 +70,18 @@
     Data is not loading!
   </div>
 
-</body>
-</html>
+  <script>
+    async function fetchData() {
+      try {
+        const swiftlyRes = await fetch('/scrape/swiftly');
+        const swiftlyData = await swiftlyRes.json();
+        document.getElementById('swiftly-data').textContent = swiftlyData.trainStatus;
+        const mbtaRes = await fetch('/scrape/mbta');
+        const mbtaData = await mbtaRes.json();
+      } catch (error) {
+        document.getElementById('swiftly-data').textContent;
+        document.getElementById('mbta-data').textContent;
+      }
+    }
+    fetchData();
+  </script>
