@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MBTA Real-Time Railway Overview </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .header {
+      background-color: #003366;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .iframe-container {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+    }
+
+    iframe {
+      flex: 1;
+      border: none;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">MBTA Executive Dashboard</div>
+  <div class="iframe-container">
+    <iframe src="/proxy/swiftly/mbta-cr/real-time/map/all-routes" title="Swiftly Map"></iframe>
+    <iframe src="/proxy/mbta-alerts" title="MBTA Subway Alerts"></iframe>
+  </div>
+</body>
+</html>
