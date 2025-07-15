@@ -27,21 +27,23 @@
       flex-direction: row;
     }
 
-    iframe {
+     iframe {
       flex: 1;
       border: none;
       height: 100%;
-    }
+      width: 50%;
+    } 
+
   </style>
 </head>
 <body>
   <div class="header">MBTA Executive Dashboard</div>
   <div class="iframe-container">
-    <iframe src="/proxy/swiftly/mbta-cr/real-time/map/all-routes" title="Swiftly Map"></iframe>
+    <iframe src="/proxy/swiftly/mbta-cr/real-time/map/all-routes"></iframe>
 <iframe src="/proxy/mbta/alerts/subway" title="MBTA Subway Alerts"></iframe>
   </div>
 </body>
-</html> 
+</html>
 
 
   <!-- <script>
@@ -50,4 +52,3 @@
     loadAlerts();
     setInterval(loadAlerts, 60000);
   </script> -->
-
