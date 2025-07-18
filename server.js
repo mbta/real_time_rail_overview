@@ -41,6 +41,21 @@ app.use('/', [
     }
   })
 ]);
+
+
+app.use('/proxy/mbta-github', createProxyMiddleware({
+  target: 'https://mbta.github.io/gm_dashboard',
+  changeOrigin: true,
+  pathRewrite: {
+    '^/proxy/mbta-github': '',
+  },
+  onProxyRes: function (proxyRes) {
+    delete proxyRes.headers['x-frame-options'];
+    delete proxyRes.headers['content-security-policy'];
+  }
+}));
+
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
