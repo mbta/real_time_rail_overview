@@ -27,3 +27,8 @@ Open your browser to:
 # The webpage
 
 ![656D2698-1E7E-4006-B7C8-FFB1443FD218](https://github.com/user-attachments/assets/1274a2d3-be15-4d1b-93d4-76ab344fa669)
+
+# Asana Project Dashboard
+
+https://app.asana.com/1/15492006741476/project/1210802364582054/list/1210802281325374
+
