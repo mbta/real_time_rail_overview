@@ -6,7 +6,7 @@ This is a Node.js-based webpage created to provide a "middle ground" real-time s
 
 1. Side-by-side embedded iframes of existing tools
 
-2. Auto-refreshing every 20 seconds
+2. Auto-refreshing every 60 seconds, with a banner on the top displaying when the webpage was last refreshed
 
 3. Simple and low-maintenance
 
